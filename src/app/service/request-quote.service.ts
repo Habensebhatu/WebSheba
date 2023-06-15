@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 export class RequestQuoteService {
 
   private apiUrl = 'https://localhost:7218/api/quote'; // Replace with your actual API URL
-  private apiUrll = 'https://apiwebsheba.azurewebsites.net/api/quote/uploadCustomersfile'; // Replace with your actual API URL
+  private apiUrll = 'https://apiwebexperts.azurewebsites.net/api/quote/uploadCustomersfile'; // Replace with your actual API URL
 
   constructor(private http: HttpClient) { }
 

@@ -1,0 +1,310 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col p-0">
+            <div class="bg-image vh-100" style="background-image: url('../../../assets/image/background.jpg')">
+                <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link text-white mx-3" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white mx-3" href="#Portfolio">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white mx-3" href="#Review">Review</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn-primary btn-lg mx-3" href="#request-quote" role="button">OFFERTE
+                                    AANVRAGEN
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div id="home">
+                <div class="jumbotron" *ngIf="toggel">
+                    <h1 class="display-4 text-white">Online marketing op maat.</h1>
+                    <hr class="my-2">
+                    <p class="lead text-white">Wij zijn gespecialiseerd in het maken van professionele 
+                        webshops op maat.<br> We bieden een unieke oplossing die is ontworpen om perfect aan te 
+                        sluiten <br>bij jouw behoeften, en we zijn toegewijd aan het helpen van bedrijven zoals <br>
+                         die van jou om hun digitale voetafdruk uit te breiden en meer klanten te bereiken.</p>
+                    <hr class="my-4">
+                    <a class="btn btn-primary btn-lg" routerLink="/requestQuote" role="button">OFFERTE
+                        AANVRAGEN</a>
+                </div>
+                <div class="jumbotron" *ngIf="!toggel">
+                    <h1 class="display-4 text-white">Bedankt voor je aanvraag!</h1>
+                    <hr class="my-2">
+                    <p class="lead text-white">We gaan voor je aan de slag! Binnen 1 werkdag ontvang je van ons een email met een op maat gemaakte offerte. </p>
+                    <hr class="my-4">
+                    <button class="btn btn-primary btn-lg" (click)="BackToHame()">Terug naar Home</button>  
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div id="Portfolio">
+        <div class="row"  *ngIf="toggel">
+            <div class="col">
+                <div class="container">
+                    <h1 class="text-center custom-margin">Portfolio.</h1>
+                    <h2 class="text-center ">Recent opgeleverde websites</h2>
+                    <div class="row form">
+                        <div class="col-lg-4 col-md-6 mb-4 ">
+                            <div class="portfolio-item">
+                                <a href="https://syncflare.ai/" target="_blank">
+                                    <img class="img-fluid" src="../../../assets/image/syncflare.jpg" alt="syncflare">
+                                </a>
+                                <div class="portfolio-title">
+                                    <h4 class="">SYNCFLARE</h4>
+                                    <a class="watch-live ml-2" href="https://syncflare.ai/" target="_blank">Watch
+                                        Live &rarr;</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="portfolio-item">
+                                <a href="http://164134.ao-alkmaar.nl/gezondeten/" target="_blank">
+                                    <img class="img-fluid" src="../../../assets/image/Gezondeten.jpg" alt="Website 1">
+                                </a>
+                                <div class="portfolio-title">
+                                    <h4 class="">Gezondeten</h4>
+                                    <a class="watch-live ml-2" href="http://164134.ao-alkmaar.nl/gezondeten/"
+                                        target="_blank">Watch Live &rarr;</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="portfolio-item">
+                                <a href="http://164134.ao-alkmaar.nl/lekker//" target="_blank">
+                                    <img class="img-fluid" src="../../../assets/image/LekkerLezen.jpg"
+                                        alt="lekker eten">
+                                </a>
+                                <div class="portfolio-title">
+                                    <h4 class="">Lekker eten</h4>
+                                    <a class="watch-live ml-2" href="http://164134.ao-alkmaar.nl/lekker/"
+                                        target="_blank">Watch Live &rarr;</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="portfolio-item">
+                                <a href="https://redsea5.com/" target="_blank">
+                                    <img class="img-fluid" src="../../../assets/image/Redsea.jpg" alt="Website 1">
+                                </a>
+                                <div class="portfolio-title">
+                                    <h4 class="">Red Sea</h4>
+                                    <a class="watch-live ml-2" href="https://redsea5.com/" target="_blank">Watch
+                                        Live &rarr;</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="portfolio-item">
+
+                                <a href="https://wesselink.azurewebsites.net/login" target="_blank">
+                                    <img class="img-fluid" src="../../../assets/image/simon.jpg" alt="Website 1">
+                                </a>
+                                <div class="portfolio-title">
+                                    <h4 class="">Wesselink</h4>
+                                    <a class="watch-live ml-2" href="https://wesselink.azurewebsites.net/login" target="_blank">Watch
+                                        Live &rarr;</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="portfolio-item">
+                                <a href="https://syncflare.ai/" target="_blank">
+                                    <img class="img-fluid" src="../../../assets/image/LekkerLezen.jpg" alt="Website 1">
+                                </a>
+                                <div class="portfolio-title">
+                                    <h4 class="">Lekker eten</h4>
+                                    <a class="watch-live ml-2" href="https://website1.com" target="_blank">Watch
+                                        Live &rarr;</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Review"  *ngIf="toggel">
+        <div class="row">
+            <div class="col">
+                <!-- Content for the remaining divs or containers -->
+                <div class="container">
+                    <h1 class="text-center custom-margin">Review.</h1>
+                    <h2 class="text-center ">Wat andere bedrijfseigenaren zeggen</h2>
+                    <div class="row mt-5 justify-content-center align-items-center">
+                        <div class="col-lg-4 mb-4">
+                            <div class="review-item">
+                                <div class="review-info">
+                                    <h4 class="text-white">Abel Sebhatu</h4>
+                                    <h5><a class="text-white" href="customer-website-url"
+                                            target="_blank">syncflare.ai</a></h5>
+                                </div>
+                                <div class="review-text">
+                                    <p class="fw-medium text-lg">Een oprechte dank aan het team van Websheba voor 
+                                        hun indrukwekkende werk. Ze hebben onze verwachtingen overtroffen en hebben onze concepten vakkundig en professioneel omgezet in realiteit. Het gemak en de efficiëntie van hun oplossingen hebben bijgedragen aan onze tevredenheid en die van onze klanten. 
+                                       </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-4">
+                            <div class="review-item">
+                                <div class="review-info">
+                                    <h4 class="text-white">Miricho</h4>
+                                    <h5><a class="text-white" href="https://redsea5.com/"
+                                            target="_blank">Redsea.com</a></h5>
+                                </div>
+                                <div class="review-text">
+                                    <p class="fw-medium text-lg">Enorm bedankt aan Websheba voor het creëren 
+                                        van onze fantastische webshop. Ze hebben onze visie tot leven gebracht met hun professionaliteit en technische kunde. De gebruiksvriendelijkheid van de site is uitstekend en onze klanten zijn even enthousiast als wij. 
+                                        We raden Websheba van harte aan voor iedereen die een hoogwaardige webshop wil</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-5 justify-content-center align-items-center">
+                        <div class="col-lg-4 mb-4">
+                            <div class="review-item">
+                                <div class="review-info">
+                                    <h4 class="text-white">Wesselink</h4>
+                                    <h5><a class="text-white" href="https://syncflare.ai/"
+                                            target="_blank">LekkerLezen.nl</a></h5>
+                                </div>
+                                <div class="review-text">
+                                    <p class="fw-medium text-lg">Ik wil graag even de tijd nemen om mijn diepste dankbaarheid uit te drukken aan het team van Websheba. Ze hebben onlangs een prachtige website voor ons gebouwd waarmee we boeken online kunnen verhuren, en ik ben werkelijk onder de 
+                                        indruk van hun vakmanschap en toewijding.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Repeat the above code for the other review divs -->
+                        <div class="col-lg-4 mb-4">
+                            <div class="review-item">
+                                <div class="review-info">
+                                    <h4 class="text-white">Henk de vries </h4>
+                                    <h5><a class="text-white" href="http://164134.ao-alkmaar.nl/gezondeten/"
+                                            target="_blank">gezondeten.nl</a></h5>
+                                </div>
+                                <div class="review-text">
+                                    <p class="fw-medium text-lg">In een korte tijd een mooie site op maat voor mijn Klussenbedrijf gemaakt .Super trots op mijn nieuwe website! Hele fijne samenwerking en contacten met WebSheba. Niets is teveel gevraagd! Haben , enorm bedankt!.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="request-quote">
+        <div class="row"  *ngIf="toggel">
+            <div class="col">
+                <div class="container">
+                    <h2 class="text-center custom-margin">Offerte aanvragen.</h2>
+                    <div class="row mt-5 justify-content-center">
+                        <div class="col-md-5">
+                            <div class="additional-content">
+                                <h2 class="mt-5">Vraag hier een offerte aan</h2>
+                                <P class="mt-4">We zijn klaar om te beginnen! Vul het aangrenzende formulier in en we zullen je binnen één
+                                     werkdag een offerte sturen die je vrijblijvend kunt overwegen.</P>
+                                <ul class="symbol-list">
+                                    <li>Gratis</li>
+                                    <li>100% vrijblijvend</li>
+                                    <li>Binnen 1 werkdag een offerte</li>
+                                    <li>Uitgebreide informatie</li>
+                                </ul>
+                                <p>Laten we samenwerken om je bedrijf naar een hoger niveau te tillen en je klanten een
+                                     naadloze winkelervaring te bieden, zowel online als offline.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="bg-white p-5 shadow">
+                                <form [formGroup]="customerForm" (ngSubmit)="onSubmit()">
+                                    <div class="row mb-4">
+                                      <div class="col">
+                                        <div class="form-outline">
+                                          <label class="form-label" for="name">Naam</label>
+                                          <input type="text" id="name" class="form-control" formControlName="name" required />
+                                          <div *ngIf="customerForm.get('name')?.invalid && (customerForm.get('name')?.dirty || customerForm.get('name')?.touched)" class="text-danger">
+                                            Naam en achternaam is verplicht.
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="form-outline mb-4">
+                                      <label class="form-label" for="email">E-Mail</label>
+                                      <input type="email" id="email" class="form-control" formControlName="email" required />
+                                      <div *ngIf="customerForm.get('email')?.invalid && (customerForm.get('email')?.dirty || customerForm.get('email')?.touched)" class="text-danger">
+                                        E-Mail is verplicht en moet een geldig e-mailadres zijn.
+                                      </div>
+                                    </div>
+                                    <div class="form-outline mb-4">
+                                      <label class="form-label" for="phone">Telefoon</label>
+                                      <input type="number" id="phone" class="form-control" formControlName="phone" required />
+                                      <div *ngIf="customerForm.get('phone')?.invalid && (customerForm.get('phone')?.dirty || customerForm.get('phone')?.touched)" class="text-danger">
+                                        Telefoon is verplicht en moet een geldig telefoonnummer zijn.
+                                      </div>
+                                    </div>
+                                    <div class="form-outline mb-4">
+                                      <label class="form-label" for="info">Beschrijf uw wensen voor de website
+                                    </label>
+                                      <textarea class="form-control" id="info" rows="4" formControlName="body" ></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-block mb-4">Versturen</button>
+                                  </form>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer bg-dark text-light py-4 mt-5"  *ngIf="toggel">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 mb-4">
+          <h4 class="mt-2">WebSheba</h4>
+          <p>Bij Websheba begrijpen we de kracht van de gemeenschap en de waarde van het
+             bedienen van onze klanten op de manier die voor hen het meest zinvol is. 
+             Daarom zijn wij er trots op ons te richten 
+            op de unieke behoeften van de Eritrese gemeenschap in Nederland</p>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="row justify-content-center">
+            <div class="col-md-4 mb-4 ">
+              <h4 class="mt-2">Navigaties</h4>
+              <ul class="symbol-footer">
+                <li><a class="nav-link text-white" href="#home">Home</a></li>
+                <li><a class="nav-link text-white" href="#Portfolio">Portfolio</a></li>
+                <li><a class="nav-link text-white" href="#Review">Review</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 mb-4 mt-2">
+              <h4>Contact</h4>
+              <ul class="symbol-footer">
+                <li>Hoorn</li>
+                <li>1628AJ, Lijster</li>
+                <li>Haben1414@gmail.com</li>
+                <li>KVK: 83811362</li>
+                <li>BTW: NL.003.874.000.B44</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </footer>
+  
+
+<router-outlet></router-outlet>
